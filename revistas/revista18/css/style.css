@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  width: 40%;
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.slide .image {
+  height: 100%;
+  width: 100%;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .main {
+    height: 70vh;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    height: 100vh;
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .main {
+    height: 75vh;
+    width: 100%;
+  }
+} 
+
+@media screen and (min-width: 425px) {
+  .main {
+    height: 80vh;
+    width: 100%;
+  }
+} 
+
+@media screen and (min-width: 768px) {
+  .main {
+    height: 100vh;
+    width: 70%;
+  }
+} 
+
+@media screen and (min-width: 1044px) {
+  .main {
+    height: 100vh;
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .main {
+    height: 100vh;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .main {
+    height: 100vh;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper,
+  .slide {
+    height: auto; 
+  }
+
+  .slide::before {
+    content: none; 
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper,
+  .slide {
+    height: auto; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide::before {
+    content: none; 
+  }
+  
+  .slide .image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+

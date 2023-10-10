@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color2: #181818;
+    
+}
+footer {
+    background-color: burlywood;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em; 
+    color: black;
+    opacity: 0.9; 
+}
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    background-color: white;
+    transition: 0.5s;
+}
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* FOOTER */
+.footerNav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: var(--color2);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+
+@media (max-width: 610px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+main {
+    height: 50%;
+    width: 100%;
+}
+
+/* Quienes somos */
+.titSeccion {
+    /* float: left; */
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.introQuienes {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    padding: 50px 0px 0px;
+}
+
+.box {
+    text-align: center;
+    background-color: #424B54;
+    width: 40%;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin: 2spx;
+    flex-grow: 1;
+}
+
+.box i {
+    font-size: 50px; 
+    position: absolute; 
+    padding-top: 80px;
+    transform: translateX(-50%);
+    color: goldenrod;
+}
+
+.box p {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width: 610px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .box i {
+        padding-top: 50px;
+        font-size: 60px;
+    }
+}
+
+.modGM {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 980px) {
+    .bigBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .big {
+        width: 100%;
+    }  
+    .modGM {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 470px) {
+    .modGM {
+        padding-top: 25%;
+    }
+}
+
+.bigBoxes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.big {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 1px;
+    padding: 20px;
+}
+
+
+.title {
+    float: left;
+    font-weight: 900;
+    font-size: 43px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.big1 {
+    background-image: url(../images/image2.jpg);
+    opacity: .9;
+}
+.big2 {
+    background-image: url(../images/image1.jpeg);
+    opacity: .9;
+}  
+
+
+/* revista  */
+.revistaCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 65vh;
+    background-color: #181818;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.revistaSec {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+/* Default styles for larger screens */
+
+
+@media only screen and (max-width: 1023px) {
+    .revistaCont {
+        width: 100%; 
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .revistaCont {
+        width: 100%; 
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 100%; 
+        max-width: 280px; 
+    }
+}
+
+.container {
+    max-width: 1200px;
+    width: 70%;
+}
+.slider-wrapper {
+    position: relative;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-columns: repeat(20, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+   }
+}
+
+.ver-caption {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #3772FF;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+.ver-caption:hover {color: #888;}
