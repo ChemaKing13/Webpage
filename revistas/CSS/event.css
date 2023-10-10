@@ -13,13 +13,16 @@
     text-transform: uppercase;
     /* margin-top: 70px; */
     position: absolute;
+    margin-top: -3%;
 }
-
+.modGM {
+    padding-top: 0px;
+}
 .eventContainer {
-    width: 100%;
+    width: 30%;
     height: auto;
     overflow: hidden;
-    padding-top: 15%;
+    padding-top: 2%;
 } 
 
 .eventWrapper {
@@ -27,6 +30,10 @@
     display: flex;
     margin-right: 5px;
     animation: slide 15s infinite;
+}
+
+.eventImage {
+    width: 100%;
 }
 
 @keyframes slide {
@@ -57,9 +64,50 @@
 
 }
 
+@media only screen and (min-width: 1150) {
+    
+.eventContainer {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 8%;
+} 
+
+.eventWrapper {
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+    animation: slide 15s infinite;
+}
+
 .eventImage {
     width: 100%;
 }
+}
+
+@media only screen and (max-width: 1143px) {
+    .eventContainer {
+        width: 60%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 8%;
+    } 
+    
+    .eventWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+    }
+    
+    .eventImage {
+        width: 100%;
+    }
+
+    .modGM {
+        padding-top: 0px;
+    }
+} 
 
 @media only screen and (max-width: 767px) {
     .eventSec {
@@ -69,14 +117,6 @@
         text-align: center;
         padding-top: 30%;
     }
-
-    .eventWrapper {
-        display: flex;
-        margin-right: 5px;
-        animation: slide 10s infinite;
-        padding-top: 10px;
-    }
-
     .modGM {
         padding-top: 0%;
     }
@@ -86,14 +126,38 @@
         overflow: hidden;
         padding-top: 15%;
     } 
+    .eventWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+    } *
+    .eventImage {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .eventContainer {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 8%;
+    } 
     
     .eventWrapper {
+        width: 100%;
         display: flex;
         margin-right: 5px;
         animation: slide 15s infinite;
     }
+    
     .eventImage {
         width: 100%;
-        padding: 5px;
+    }
+    .modGM {
+        padding-top: 0%;
     }
 }
