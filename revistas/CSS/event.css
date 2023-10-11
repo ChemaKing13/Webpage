@@ -237,8 +237,8 @@
 
 .teamMember {
     text-align: center;
-    width: 20%;
-    margin: 20px;
+    width: 300px;
+    margin: 20px auto;
 }
 
 .teamMember img {
@@ -256,6 +256,7 @@
     background-color: black;
     color: white;
     border-radius: 15px;
+    margin: 5px;
 }
 
 .teamMember p {
