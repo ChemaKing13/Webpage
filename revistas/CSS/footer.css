@@ -216,17 +216,26 @@ main {
     text-transform: uppercase;
     margin-bottom: 10px;
     vertical-align: middle;
+    color: white;
+    opacity: none;
 }
 
 .big1 {
     background-image: url(../images/image2.jpg);
-    opacity: .9;
+    opacity: .8;
+    font-weight: 500;
 }
 .big2 {
     background-image: url(../images/image1.jpeg);
-    opacity: .9;
+    opacity: .8;
+    font-weight: 500;
 }  
 
+.second-span {
+    opacity: none;
+    filter: brightness(1.6);
+    color: white;
+}
 
 /* revista  */
 .revistaCont{
