@@ -224,3 +224,51 @@
         margin-top: -80px;
     }
 } 
+
+/* Nuestro equipo */
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.teamMember {
+    text-align: center;
+    width: 20%;
+    margin: 20px;
+}
+
+.teamMember img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teamMember figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.teamMember p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .teamMember {
+        width: 50%; 
+    }
+}
+
+.equipo {
+    text-align: center;
+}
