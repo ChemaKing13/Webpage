@@ -20,6 +20,7 @@
 }
 .eventContainer {
     width: 30%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     padding-top: 2%;
@@ -64,7 +65,7 @@
 
 }
 
-@media only screen and (min-width: 1150) {
+/* @media only screen and (min-width: 1150) {
     
 .eventContainer {
     width: 80%;
@@ -83,33 +84,8 @@
 .eventImage {
     width: 100%;
 }
-}
-
-@media only screen and (max-width: 1143px) {
-    .eventContainer {
-        width: 60%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 8%;
-    } 
-    
-    .eventWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-    }
-    
-    .eventImage {
-        width: 100%;
-    }
-
-    .modGM {
-        padding-top: 0px;
-    }
-} 
-
-@media only screen and (max-width: 767px) {
+} */
+@media only screen and (max-width: 710px) {
     .eventSec {
         display: flex;
         flex-direction: column;
@@ -138,26 +114,113 @@
     }
 }
 
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 711px) {
+    .eventSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
     .eventContainer {
-        width: 50%;
+        width: 80%;
         height: auto;
         overflow: hidden;
-        padding-top: 8%;
+        padding-top: 10%;
     } 
-    
     .eventWrapper {
         width: 100%;
         display: flex;
         margin-right: 5px;
         animation: slide 15s infinite;
-    }
-    
+    } *
     .eventImage {
         width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .eventSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
     }
     .modGM {
         padding-top: 0%;
     }
+    .eventContainer {
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 5%;
+    } 
+    .eventWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+    } 
+    .eventImage {
+        width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -5px;
+    }
 }
+
+
+@media only screen and (min-width: 1500px) {
+    .eventSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
+    .eventContainer {
+        width: 30%;
+        height: auto;
+        overflow: hidden;
+    } 
+    .eventWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+    } *
+    .eventImage {
+        width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -80px;
+    }
+} 
