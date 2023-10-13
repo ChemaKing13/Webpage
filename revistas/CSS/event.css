@@ -65,26 +65,6 @@
 
 }
 
-/* @media only screen and (min-width: 1150) {
-    
-.eventContainer {
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    padding-top: 8%;
-} 
-
-.eventWrapper {
-    width: 100%;
-    display: flex;
-    margin-right: 5px;
-    animation: slide 15s infinite;
-}
-
-.eventImage {
-    width: 100%;
-}
-} */
 @media only screen and (max-width: 710px) {
     .eventSec {
         display: flex;
@@ -111,6 +91,14 @@
     .eventImage {
         width: 100%;
         padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -15%;
     }
 }
 
@@ -147,7 +135,7 @@
         position: absolute;
         text-transform: uppercase;
         position: absolute;
-        margin-top: 15px;
+        /* margin-top: -20px; */
     }
 }
 
@@ -210,6 +198,7 @@
         display: flex;
         margin-right: 5px;
         animation: slide 15s infinite;
+        margin-top: -10%;
     } *
     .eventImage {
         width: 100%;
@@ -266,10 +255,259 @@
 
 @media (max-width: 768px) {
     .teamMember {
-        width: 50%; 
+        width: 40%; 
+    }
+    .teamMember img {
+        width: 90%;
+        height: auto;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .teamMember figcaption {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .teamMember p {
+        margin-top: 5px;
+        font-size: 15px;
     }
 }
 
 .equipo {
     text-align: center;
 }
+
+/* Venta clásicos */
+.clasicSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.clasicTit {
+    font-size: 50px;
+    font-weight: 800;
+    position: absolute;
+    text-transform: uppercase;
+    /* margin-top: 70px; */
+    position: absolute;
+    margin-top: -3%;
+}
+.modGM {
+    padding-top: 0px;
+}
+.clasicContainer {
+    width: 30%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 2%;
+} 
+
+.clasicWrapper {
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+    animation: slide 15s infinite;
+}
+
+.clasicImage {
+    width: 100%;
+    padding: 5px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translate(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+}
+
+@media only screen and (max-width: 710px) {
+    .clasicSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
+    .clasicContainer {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 15%;
+    } 
+    .clasicWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+        margin-top: 15%;
+    } *
+    .eventImage {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 711px) {
+    .clasicSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
+    .clasicContainer {
+        width: 80%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 10%;
+    } 
+    .clasicWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+        margin-top: 10%;
+    } *
+    .clasicImage {
+        width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 15px;
+    }
+    .clasicTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        /* margin-top: 70px; */
+        position: absolute;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .clasicSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
+    .clasicContainer {
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 5%;
+    } 
+    .clasicWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+        margin-top: 25%;
+    } 
+    .clasicImage {
+        width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -5%;
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .clasicSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: -15%;
+    }
+    .modGM {
+        padding-top: 0%;
+    }
+    .clasicContainer {
+        width: 30%;
+        height: auto;
+        overflow: hidden;
+    } 
+    .clasicWrapper {
+        width: 100%;
+        display: flex;
+        margin-right: 5px;
+        animation: slide 15s infinite;
+    } *
+    .clasicImage {
+        width: 100%;
+        padding: 5px;
+    }
+    .eventTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -80px;
+    }
+    .clasicTit {
+        font-size: 50px;
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 5%;
+    }
+} 
