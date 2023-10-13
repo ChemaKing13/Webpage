@@ -166,13 +166,13 @@
 }
 
 .big1 {
-    background-image: url(../images/image2.jpg);
-    opacity: .8;
+    background-image: url(../images/car3.jpeg);
+    opacity: 0.9;
     font-weight: 500;
 }
 .big2 {
-    background-image: url(../images/image1.jpeg);
-    opacity: .8;
+    background-image: url(../images/car1.jpeg);
+    opacity: 0.9;
     font-weight: 500;
 }  
 
