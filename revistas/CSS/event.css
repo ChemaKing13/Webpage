@@ -192,6 +192,7 @@
         width: 30%;
         height: auto;
         overflow: hidden;
+        padding-top: -10%;
     } 
     .eventWrapper {
         width: 100%;
@@ -210,7 +211,7 @@
         position: absolute;
         text-transform: uppercase;
         position: absolute;
-        margin-top: -80px;
+        margin-top: -8%;
     }
 } 
 
@@ -489,6 +490,7 @@
         display: flex;
         margin-right: 5px;
         animation: slide 15s infinite;
+        margin-top: -2%;
     } *
     .clasicImage {
         width: 100%;
@@ -500,7 +502,7 @@
         position: absolute;
         text-transform: uppercase;
         position: absolute;
-        margin-top: -80px;
+        margin-top: -6.5%;
     }
     .clasicTit {
         font-size: 50px;
@@ -508,6 +510,6 @@
         position: absolute;
         text-transform: uppercase;
         position: absolute;
-        margin-top: 5%;
+        margin-top: -3%;
     }
 } 
