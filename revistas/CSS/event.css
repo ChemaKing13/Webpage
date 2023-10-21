@@ -1,220 +1,3 @@
-.eventSec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 10%;
-}
-
-.eventTit {
-    font-size: 50px;
-    font-weight: 800;
-    position: absolute;
-    text-transform: uppercase;
-    /* margin-top: 70px; */
-    position: absolute;
-    margin-top: -3%;
-}
-.modGM {
-    padding-top: 0px;
-}
-.eventContainer {
-    width: 30%;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding-top: 2%;
-} 
-
-.eventWrapper {
-    width: 100%;
-    display: flex;
-    margin-right: 5px;
-    animation: slide 15s infinite;
-}
-
-.eventImage {
-    width: 100%;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translate(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-
-}
-
-@media only screen and (max-width: 710px) {
-    .eventSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 30%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .eventContainer {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 15%;
-    } 
-    .eventWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-    } *
-    .eventImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -15%;
-    }
-}
-
-@media only screen and (min-width: 711px) {
-    .eventSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .eventContainer {
-        width: 80%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 10%;
-    } 
-    .eventWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-    } *
-    .eventImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        /* margin-top: -20px; */
-    }
-}
-
-@media only screen and (min-width: 890px) {
-    .eventSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .eventContainer {
-        width: 40%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 5%;
-    } 
-    .eventWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-    } 
-    .eventImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -5px;
-    }
-}
-
-
-@media only screen and (min-width: 1500px) {
-    .eventSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .eventContainer {
-        width: 30%;
-        height: auto;
-        overflow: hidden;
-        padding-top: -10%;
-    } 
-    .eventWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-        margin-top: -10%;
-    } *
-    .eventImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -8%;
-    }
-} 
-
 /* Nuestro equipo */
 .teamContainer {
     display: flex;
@@ -285,231 +68,209 @@
 }
 
 /* Venta clásicos */
-.clasicSec{
+.clasicCont{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 10%;
+    /* height: 65vh; */
+    background-color: white;
+    width: 100%;
+    padding-top: 5px;
 }
 
 .clasicTit {
     font-size: 50px;
     font-weight: 800;
-    position: absolute;
     text-transform: uppercase;
-    /* margin-top: 70px; */
-    position: absolute;
-    margin-top: -3%;
+    margin-top: 30%;
 }
-.modGM {
-    padding-top: 0px;
-}
-.clasicContainer {
-    width: 30%;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding-top: 2%;
-} 
 
-.clasicWrapper {
-    width: 100%;
+.clasicSec {
     display: flex;
-    margin-right: 5px;
-    animation: slide 15s infinite;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
-.clasicImage {
+
+@media only screen and (max-width: 1023px) {
+    .clasicCont {
+        width: 100%; 
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .clasicCont {
+        width: 100%; 
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 100%; 
+        max-width: 280px; 
+    }
+}
+
+.container {
+    max-width: 1200px;
+    width: 70%;
+}
+.slider-wrapper {
+    position: relative;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-columns: repeat(20, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+   }
+}
+
+.ver-caption {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #3772FF;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+.ver-caption:hover {color: #888;}
+
+
+
+
+/* Event */
+.eventCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* height: 65vh; */
+    background-color: white;
     width: 100%;
-    padding: 5px;
+    padding-top: 5px;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translate(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-
+.eventTit {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-@media only screen and (max-width: 710px) {
-    .clasicSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 30%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .clasicContainer {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 15%;
-    } 
-    .clasicWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-        margin-top: 15%;
-    } *
-    .eventImage {
-        width: 100%;
-        padding: 5px;
-    }
-}
-
-@media only screen and (min-width: 711px) {
-    .clasicSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .clasicContainer {
-        width: 80%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 10%;
-    } 
-    .clasicWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-        margin-top: 10%;
-    } *
-    .clasicImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: 15px;
-    }
-    .clasicTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        /* margin-top: 70px; */
-        position: absolute;
-        margin-top: 5%;
-    }
-}
-
-@media only screen and (min-width: 890px) {
-    .clasicSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
-    }
-    .modGM {
-        padding-top: 0%;
-    }
-    .clasicContainer {
-        width: 40%;
-        height: auto;
-        overflow: hidden;
-        padding-top: 5%;
-    } 
-    .clasicWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-        margin-top: 25%;
-    } 
-    .clasicImage {
-        width: 100%;
-        padding: 5px;
-    }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -5%;
-    }
+.eventSec {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
 
-@media only screen and (min-width: 1500px) {
-    .clasicSec {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: -15%;
+@media only screen and (max-width: 1023px) {
+    .eventCont {
+        width: 100%; 
     }
-    .modGM {
-        padding-top: 0%;
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
     }
-    .clasicContainer {
-        width: 30%;
-        height: auto;
-        overflow: hidden;
-    } 
-    .clasicWrapper {
-        width: 100%;
-        display: flex;
-        margin-right: 5px;
-        animation: slide 15s infinite;
-        margin-top: -2%;
-    } *
-    .clasicImage {
-        width: 100%;
-        padding: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .eventCont {
+        width: 100%; 
     }
-    .eventTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -6.5%;
+
+    .slider-wrapper .image-list .image-item {
+        width: 100%; 
+        max-width: 280px; 
     }
-    .clasicTit {
-        font-size: 50px;
-        font-weight: 800;
-        position: absolute;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -3%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 70%;
+}
+.slider-wrapper {
+    position: relative;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-columns: repeat(30, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
     }
-} 
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+   }
+}
+
+.ver-caption {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #3772FF;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+.ver-caption:hover {color: #888;}

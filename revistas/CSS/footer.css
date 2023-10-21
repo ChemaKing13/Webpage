@@ -44,7 +44,7 @@
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .introQuienes {
@@ -128,7 +128,7 @@
 
 @media (max-width: 470px) {
     .modGM {
-        padding-top: 25%;
+        /* padding-top: 25%; */
     }
 }
 
@@ -181,6 +181,7 @@
     color: white;
 }
 
+
 /* revista  */
 .revistaCont{
     display: flex;
@@ -200,7 +201,6 @@
     align-items: center;
     text-align: center;
 }
-/* Default styles for larger screens */
 
 
 @media only screen and (max-width: 1023px) {
