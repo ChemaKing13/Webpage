@@ -37,6 +37,8 @@
     font-size: 20px;
 }
 
+
+/* max 768 */
 @media (max-width: 768px) {
     .teamMember {
         width: 40%; 
@@ -84,7 +86,7 @@
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-top: 30%;
+    margin-top: 100px;
 }
 
 .clasicSec {
@@ -94,13 +96,22 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 700px) {
+    .clasicTit {
+        font-size: 50px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-top: 20%;
+    }
+}
+
 
 @media only screen and (max-width: 1023px) {
     .clasicCont {
         width: 100%; 
     }
 
-    .slider-wrapper .image-list .image-item {
+    .slider-wrapper .image-list .image-item-clasic {
         width: 280px;
         height: 380px;
     }
@@ -111,11 +122,12 @@
         width: 100%; 
     }
 
-    .slider-wrapper .image-list .image-item {
+    .slider-wrapper .image-list .image-item-clasic {
         width: 100%; 
         max-width: 280px; 
     }
 }
+
 
 .container {
     max-width: 1200px;
@@ -135,7 +147,7 @@
     overflow-x: auto;
     scrollbar-width: none;
 }
-.slider-wrapper .image-list .image-item {
+.slider-wrapper .image-list .image-item-clasic {
     width: 325px;
     height: 400px;
     object-fit: cover;
@@ -150,7 +162,7 @@
       margin-bottom: 15px;
       scroll-snap-type: x mandatory;
     }
-    .slider-wrapper .image-list .image-item {
+    .slider-wrapper .image-list .image-item-clasic {
       width: 280px;
       height: 380px;
    }
@@ -205,7 +217,7 @@
         width: 100%; 
     }
 
-    .slider-wrapper .image-list .image-item {
+    .slider-wrapper .image-list .image-item-event {
         width: 280px;
         height: 380px;
     }
@@ -214,9 +226,10 @@
 @media only screen and (max-width: 767px) {
     .eventCont {
         width: 100%; 
+        height: 500px;
     }
 
-    .slider-wrapper .image-list .image-item {
+    .slider-wrapper .image-list .image-item-event {
         width: 100%; 
         max-width: 280px; 
     }
@@ -240,10 +253,10 @@
     overflow-x: auto;
     scrollbar-width: none;
 }
-.slider-wrapper .image-list .image-item {
+.slider-wrapper .image-list .image-item-event {
     width: 325px;
     height: 400px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 @media only screen and (max-width: 1023px) {
@@ -255,9 +268,9 @@
       margin-bottom: 15px;
       scroll-snap-type: x mandatory;
     }
-    .slider-wrapper .image-list .image-item {
-      width: 280px;
-      height: 380px;
+    .slider-wrapper .image-list .image-item-event {
+      /* width: 410px;
+      height: 480px; */
    }
 }
 
